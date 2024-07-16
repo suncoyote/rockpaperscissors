@@ -1,22 +1,30 @@
 
 function getComputerChoice() {
- var choiceNumber = Math.floor(Math.random()*(3 -0) + 1);
+ let choiceNumber = Math.floor(Math.random()*(3 -0) + 1);
 
  if (choiceNumber == 1) { 
-    return "Rock"
+    return "rock"
 
  }else if (choiceNumber == 2){ 
-    return "Paper"
+    return "paper"
 
  }else { 
-    return "Scissors"
-    
+    return "scissors"
+
  }
 
 }
 
-var computerChoice = getComputerChoice()
+let computerChoice = getComputerChoice()
 console.log (computerChoice)
+
+function getHumanChoice() {
+    let input = prompt('Please enter your choice: (you can pick "Rock", "Paper" or "Scissors")')
+    return input
+}
+
+let humanChoice = getHumanChoice()
+console.log(humanChoice)
 
 
 
