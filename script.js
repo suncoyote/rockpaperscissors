@@ -13,8 +13,6 @@ function getComputerChoice() {
 
    };
 
-
-
 }
 
 
@@ -32,26 +30,31 @@ function playRound (humanChoice, computerChoice){
       
    }else if((humanChoice === "rock") && (computerChoice === "paper")){ 
       console.log ("You lose! Paper covers rock.")
+      computerScore++;
 
    }else if((humanChoice === "rock") && (computerChoice ==="scissors")){ 
       console.log ("You win! Rock crushes scissors.")
+      humanScore++;
    
    }else if((humanChoice === "paper") && (computerChoice === "rock")){ 
       console.log ("You win! Paper covers rock.")
+      humanScore++;
       
    }else if((humanChoice === "paper") && (computerChoice === "paper")){ 
       console.log ("Tie!")
 
    }else if((humanChoice === "paper") && (computerChoice === "scissors")){ 
       console.log ("You lose! Scissors cuts paper.")
+      computerScore++;
    
-   }else if(humanChoice === "scissors" && computerChoice === "rock"){ 
+   }else if((humanChoice === "scissors") && (computerChoice === "rock")){ 
       console.log ("You lose! Rock crushes scissors.")
+      computerScore++;
       
-   }else if(humanChoice === "scissors" && computerChoice === "paper"){ 
+   }else if((humanChoice === "scissors") && (computerChoice === "paper")){ 
       console.log ("You win! Scissors cuts paper.")
-
-   }else if(humanChoice === "scissors" && computerChoice === "scissors"){ 
+      humanScore++;
+   }else if((humanChoice === "scissors") && (computerChoice === "scissors")){ 
       console.log ("Tie!")
    
    }
@@ -63,6 +66,6 @@ const computerSelection = getComputerChoice();
 
 console.log ("Computer chose: " + computerSelection)
 
-
-
 playRound(humanSelection, computerSelection);
+
+console.log (humanScore + "//" + computerScore)
