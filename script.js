@@ -18,13 +18,11 @@ function getComputerChoice() {
 console.log (getComputerChoice())
 
 function getHumanChoice() {
-    let input = prompt('Please enter your choice: (you can pick "Rock", "Paper" or "Scissors")')
+    let input = prompt('Please enter your choice: (you can pick "Rock", "Paper" or "Scissors")').toLowerCase();
     return input
 }
 console.log(getHumanChoice())
 
 let humanScore = 0
 let computerScore = 0
-
-
 
