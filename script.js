@@ -1,7 +1,7 @@
 
 function getComputerChoice() {
-   let choiceNumber = Math.floor(Math.random()*(3 -0) + 1);
-
+   
+   let choiceNumber = Math.floor(Math.random()*(3 -0) + 1 );
    if (choiceNumber == 1) { 
       return "rock"
 
@@ -17,7 +17,6 @@ function getComputerChoice() {
 
 }
 
-console.log ("Computer chose: " + getComputerChoice())
 
 function getHumanChoice() {
     return prompt('Please enter your choice: (you can pick "Rock", "Paper" or "Scissors")').toLowerCase();
@@ -61,6 +60,9 @@ function playRound (humanChoice, computerChoice){
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
+
+console.log ("Computer chose: " + computerSelection)
+
 
 
 playRound(humanSelection, computerSelection);
