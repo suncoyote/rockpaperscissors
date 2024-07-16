@@ -15,18 +15,16 @@ function getComputerChoice() {
 
 }
 
-let computerChoice = getComputerChoice()
-console.log (computerChoice)
+console.log (getComputerChoice())
 
 function getHumanChoice() {
     let input = prompt('Please enter your choice: (you can pick "Rock", "Paper" or "Scissors")')
     return input
 }
-
-let humanChoice = getHumanChoice()
-console.log(humanChoice)
+console.log(getHumanChoice())
 
 let humanScore = 0
 let computerScore = 0
+
 
 
